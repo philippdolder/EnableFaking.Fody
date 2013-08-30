@@ -10,7 +10,7 @@ Now you ask:
 > There is [Virtuosity](https://github.com/Fody/Virtuosity/) already. Why would I use **EnableFaking** instead?"
 
 The answer: 
-> EnableFaking intends to only make those types fakeable (make members `virtual`) that you otherwise would need to define an interface solely to be able to use the type with a fake framework like [Fake It Easy](https://github.com/FakeItEasy/FakeItEasy).
+> EnableFaking intends to only make those types fakeable (make members `virtual`) that you otherwise would need to define an interface solely to be able to use the type with a fake framework like [Fake It Easy](http://fakeiteasy.github.io).
 
 Instead of 
 ```
