@@ -2,9 +2,40 @@
 
 ![Icon](https://raw.github.com/philippdolder/EnableFaking.Fody/master/Icons/package_icon.png)
 
+[Introduction to Fody](http://github.com/Fody/Fody/wiki/SampleUsage)
+
 Change class members to `virtual` as part of your build to help making TDD less effort.
 
-[Introduction to Fody](http://github.com/Fody/Fody/wiki/SampleUsage)
+Now you ask:
+> There is [Virtuosity](https://github.com/Fody/Virtuosity/) already. Why would I use **EnableFaking** instead?"
+
+The answer: 
+> EnableFaking intends to only make those types fakeable (make members `virtual`) that you otherwise would need to define an interface solely to be able to use the type with a fake framework like [Fake It Easy](https://github.com/FakeItEasy/FakeItEasy).
+
+Instead of 
+```
+    public class MyImplementation : IMyInterface
+    {
+        public void MyMethod()
+        {
+        }
+    }
+    
+    public interface IMyInterface
+    {
+        void MyMethod();
+    }
+```
+you only have to write
+```
+    public class MyImplementation
+    {
+        public void MyMethod()
+        {
+        }
+    }
+```
+and all other classes remain untouched.
 
 # Nuget package
 
