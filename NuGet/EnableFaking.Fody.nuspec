@@ -13,6 +13,7 @@
     <description>Fody AddIn that allows faking your types without writing interfaces for testing purposes only.</description>
     <language>en-US</language>
     <tags>ILWeaving Fody Cecil Faking TDD inteface interfaces</tags>
+    <developmentDependency>true</developmentDependency>
     <dependencies>
       <dependency id="Fody" version="1.15.0"/>
     </dependencies>
